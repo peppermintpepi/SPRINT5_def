@@ -11,6 +11,7 @@ function JokeExist() {
         return true;
 }
 
+// check the score to add it to aour array
 function JokeRated() {
     var jokeRated = reportAcudits.filter(function (item) {
         return item.joke == actualJoke && item.score > 0;
@@ -21,6 +22,7 @@ function JokeRated() {
         return true;
 }
 
+// change score buttons visibility
 function buttonsDisplay() {
     var jokesText = document.getElementById('actualJoke');
     if (jokesText.innerText != " ") {
@@ -28,7 +30,7 @@ function buttonsDisplay() {
     }
 }
 
-
+// get a random joke from the api
 function getJoke() {
     console.log("dad_joke");
     fetch('https://icanhazdadjoke.com/', {
