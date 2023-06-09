@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!-- css styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Acudits</title>
+    <link rel="icon" type="image/x-icon" href="/images/laugh.png">
+</head>
+
+<body>
+    <div class="p-3 m-3 bg-danger text-white p-2 text-center">
+        <h1>Dad jokes!</h1>
+        <p>the place where you'll find the perfect dad joke for any occasion!</p>
+    </div>
+    <img src="/images/dad-jokes-bg.png" id="bg-dad">
+    <div class="container" id="jokes-space">
+        <div id="jokes">
+            <h5 class="col-7 col-lg-5 position-absolute" id="actualJoke"></h5>
+        </div>
+    </div>
+    <div class="container">
+        <div class="mt-5" id="getJokes-btn">
+            <button class="btn btn-lg btn-outline-danger" type="button" id="dad-joke" onclick="getJoke()">find your own
+                dad joke <span style='font-size:100%;'>&#128517;</span></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-9" id="score-dad-jokes">
+            <button class="col-2 col-lg-1 btn position-absolute mt-5 mb-5" type="button" id="score-1" onclick="Score(1)"><img
+                    src="/images/sad.png"></button>
+            <button class="col-2 col-lg-1 btn position-absolute mt-5 mb-5" type="button" id="score-2" onclick="Score(2)"><img
+                    src="/images/happiness.png"></button>
+            <button class="col-2 col-lg-1 btn position-absolute mt-5 mb-5" type="button" id="score-3" onclick="Score(3)"><img
+                    src="/images/happy.png"></button>
+        </div>
+    </div>
+    <script src="/jokes.js"></script>
+</body>
+
+</html>

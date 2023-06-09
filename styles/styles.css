@@ -1,0 +1,79 @@
+/* body {
+    background-image: url(/images/dad-jokes-bg.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    /* background-position: left top;
+} */
+
+img {
+    position: absolute;
+    z-index: -101;
+    bottom: 0;
+    max-width: 60%;
+    height: auto;
+}
+
+#bg-dad {
+    opacity: 0.7;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+#jokes {
+    background-image: url(/images/post-it.png);
+    background-size: contain;
+    height: 35rem;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: 90%;
+}
+
+#actualJoke {
+    position: absolute;
+    rotate: -4deg;
+    right: 15%;
+    top: 30%;
+}
+
+#getJokes-btn {
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 10%;
+    top: 1rem;
+}
+
+#dad-joke {
+    position: absolute;
+    top: 50.5%;
+    right: 20%;
+}
+
+#score-btns {
+    display: block;
+}
+
+#score-dad-jokes {
+    display: none;
+}
+
+#score-1 {
+    position: absolute;
+    display: block;
+    right: 30%;
+}
+
+#score-2 {
+    position: absolute;
+    display: block;
+    right: 20%;
+}
+
+#score-3 {
+    display: block;
+    position: absolute;
+    right: 10%;
+}
